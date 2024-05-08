@@ -8,9 +8,9 @@ print("Welcome to the quiz", name)
 print("The quiz topic is general knowledge")
 
 #Asking person the questions and telling them the answers
-answer1 = input("What is Obama's last name? (make sure to capitalize your answer)")
+answer1 = input("What is Obama's last name? (make sure to capitalize your answer)").lower()
 
-if answer1 == "Obama":  
+if answer1 == "Obama".lower() :  
     print("That's correct, Obama is his last name, very good!")
     score += 1
 elif answer1 == "" :
