@@ -8,7 +8,7 @@ print("Welcome to the quiz", name)
 print("The quiz topic is general knowledge")
 
 #Asking person the questions and telling them the answers
-answer1 = input("What is Obama's last name? (make sure to capitalize your answer)").lower()
+answer1 = input("What is Obama's last name? ").lower()
 
 if answer1 == "Obama".lower() :  
     print("That's correct, Obama is his last name, very good!")
@@ -20,7 +20,7 @@ else:
     print("That's incorrect, your silly")
     print("The correct answer is Obama")
     
-answer2 = input("What costs more, a trip to space or a coffee from ponsonby? (answer space or coffee, make sure to capitalize your answer) ")
+answer2 = input("What costs more, a trip to space or a coffee from ponsonby? (answer space or coffee) ").lower()
 
 if answer2 == "Coffee":
     print("That's correct, You obviously live in Auckland! ")
@@ -33,7 +33,7 @@ else:
     print("The correct answer is a coffee from ponsonby, You obviously don't live in Auckland ")
 
 
-answer3 = input("What is bigger the human population of China or the population of road cones around Auckland? (Answer Humans or Road cones, make sure to capitalize your answer)")
+answer3 = input("What is bigger the human population of China or the population of road cones around Auckland? (Answer Humans or Road cones) ").lower()
 
 if answer3 == "Road cones":
     print("Very good that is absolutely correct!")
