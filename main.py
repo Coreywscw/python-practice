@@ -22,7 +22,7 @@ else:
     
 answer2 = input("What costs more, a trip to space or a coffee from ponsonby? (answer space or coffee) ").lower()
 
-if answer2 == "Coffee":
+if answer2 == "Coffee".lower() :
     print("That's correct, You obviously live in Auckland! ")
     score += 1
 elif answer2 == "" :
@@ -35,16 +35,16 @@ else:
 
 answer3 = input("What is bigger the human population of China or the population of road cones around Auckland? (Answer Humans or Road cones) ").lower()
 
-if answer3 == "Road cones":
+if answer3 == "Road cones".lower() :
     print("Very good that is absolutely correct!")
     score += 1
 elif answer3 == "" :
     print("Not sure?")
 
 else:
-    print("That incorrect")
+    print("That's incorrect")
     print("The correct answer is the population of road cones around auckland")
 
 #Thank person for playing
-print("Thank you for playing! You got ",score, "points" )
+print("Thank you for playing {}, your final score was {}".format(name, score))
 
