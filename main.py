@@ -1,4 +1,5 @@
 score = 0
+QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 
 #Getting persons name
 name = input("What's your name? ")
@@ -44,6 +45,24 @@ elif answer3 == "" :
 else:
     print("That's incorrect")
     print("The correct answer is the population of road cones around auckland")
+
+question = ("What is the strongest type of wood?")
+a = " Oak wood from minecraft"
+b = " Cedarwood"
+c = " Teakwood"
+d = " Australian Buloke "
+answer4 = input(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
+
+if answer4 == d or answer4 == "d":
+    print("That's correct! ")
+    score += 1
+elif answer4 == "" :
+    print ("Not sure?")
+elif answer4 != a and answer4 != "a" and answer4 != b and answer4 != "b" and answer4 != c and answer4 != "c" and answer4 != d and answer4 != "d" :
+    print ("That wasn't an option! ")
+else:
+    print("That's incorrect")
+    print("The correct answer is d Australian Buloke")
 
 #Thank person for playing
 print("Thank you for playing {}, your final score was {}".format(name, score))
