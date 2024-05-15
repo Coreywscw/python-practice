@@ -1,7 +1,7 @@
-play = "play"
+play = "yes"
 while play == "yes":
-        score = 0
-QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
+    score = 0
+    QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 
     #Getting persons name
     name = input("What's your name? ")
@@ -9,8 +9,11 @@ QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
     #Welcoming person to quiz and telling them the topic
     print("Welcome to the quiz", name)
     print("The quiz topic is general knowledge")
-    tries = input("How many attempts do you want at each question? 1-4")
-
+    try:
+        tries = int(input("How many attempts do you want at each question? 1-4 "))
+        tries = int(tries)
+    except:
+        print("That's not a number")
     #Asking person the questions and telling them the answers
     answer1 = input("What is Obama's last name? ").lower()
 
