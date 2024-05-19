@@ -9,12 +9,15 @@ while play == "yes":
     #Welcoming person to quiz and telling them the topic
     print("Welcome to the quiz", name)
     print("The quiz topic is general knowledge")
-    try:
-        tries = int(input("How many attempts do you want at each question? 1-4 "))
-        tries = int(tries)
-    except:
-        print("That's not a number")
+    while True:
+        try:
+            tries = int(input("How many attempts do you want at each question? 1-4 "))
+            tries = int(tries)
+            break
+        except:
+            print("That's not a number")
     #Asking person the questions and telling them the answers
+    
     answer1 = input("What is Obama's last name? ").lower()
 
     if answer1 == "Obama".lower() :  
@@ -22,7 +25,6 @@ while play == "yes":
         score += 1
     elif answer1 == "" :
         print("Not sure?")
-
     else:
         print("That's incorrect, your silly")
         print("The correct answer is Obama")
