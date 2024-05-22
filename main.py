@@ -23,12 +23,13 @@ while play == "yes":
     if answer1 == "Obama".lower() :  
         print("That's correct, Obama is his last name, very good!")
         score += 1
+        print(GOOD_COMMENTS[0])
     elif answer1 == "" :
         print("Not sure?")
     else:
         print("That's incorrect, your silly")
         print("The correct answer is Obama")
-        
+        print(BAD_COMMENTS[0])
     answer2 = input("What costs more, a trip to space or a coffee from ponsonby? (answer space or coffee) ").lower()
 
     if answer2 == "Coffee".lower() :
@@ -53,7 +54,6 @@ while play == "yes":
     else:
         print("That's incorrect")
         print("The correct answer is the population of road cones around auckland")
-
     question = ("What is the strongest type of wood?")
     a = " Oak wood from minecraft"
     b = " Cedarwood"
